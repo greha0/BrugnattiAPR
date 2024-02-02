@@ -1,0 +1,12 @@
+# ninja log v5
+4	161	7285722510155704	CMakeFiles/BrugnattiAPR.dir/main.c.obj	d570258d1b8d0078
+18	174	7285722510155704	CMakeFiles/BrugnattiAPR.dir/APRContatore.c.obj	d3bc558b6782fe78
+23	178	7285722510155704	CMakeFiles/BrugnattiAPR.dir/APRSentinella.c.obj	470d7985af2c55f9
+37	184	7285722510155704	CMakeFiles/BrugnattiAPR.dir/APRBuchi.c.obj	d5db5585ee7acc4
+1	106	7285722851260186	CMakeFiles/BrugnattiAPR.dir/APRSentinella.c.obj	470d7985af2c55f9
+4	124	7285723959979529	CMakeFiles/BrugnattiAPR.dir/main.c.obj	d570258d1b8d0078
+2	120	7285724236883754	CMakeFiles/BrugnattiAPR.dir/main.c.obj	d570258d1b8d0078
+12	110	7285733562839469	CMakeFiles/BrugnattiAPR.dir/main.c.obj	d570258d1b8d0078
+29	123	7285733562839469	CMakeFiles/BrugnattiAPR.dir/APRBuchi.c.obj	d5db5585ee7acc4
+18	131	7285733562995730	CMakeFiles/BrugnattiAPR.dir/APRSentinella.c.obj	470d7985af2c55f9
+5	168	7285733563308324	CMakeFiles/BrugnattiAPR.dir/APRContatore.c.obj	d3bc558b6782fe78
