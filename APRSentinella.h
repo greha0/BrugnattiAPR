@@ -7,11 +7,12 @@
  */
 #define DIM 30
 #define FLAG -999.99
+#include <stdio.h>
 
 #ifndef BRUGNATTIAPR_APRSENTINELLA_H
 #define BRUGNATTIAPR_APRSENTINELLA_H
 
-void inizializzaX(float v[]);
-int numElementiX(float v[]);
-void stampaX(float v[]);
+void inizializzaXS(float v[]);
+int numElementiXS(float v[]);
+void stampaXS(float v[]);
 #endif //BRUGNATTIAPR_APRSENTINELLA_H

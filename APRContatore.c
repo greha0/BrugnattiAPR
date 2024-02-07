@@ -8,14 +8,14 @@
 
 #include "APRContatore.h"
 
-void inizializzaX(float v[]) {
+void inizializzaXC(float v[]) {
     int i;
     for (i = 0; i < DIM; i++) {
         v[i] = -1;
     }
 }
 
-int numElementiX(float v[]){
+int numElementiXC(float v[]){
     int i;
     int num=0;
 
@@ -27,7 +27,7 @@ int numElementiX(float v[]){
     return num;
 }
 
-void stampaX(float v[]) {
+void stampaXC(float v[]) {
     int i;
     int cont;
     for (cont = 0; cont < 3; cont++) {
