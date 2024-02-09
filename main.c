@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 #define DIM 30
 #define FLAG -999.99
 
@@ -21,6 +22,7 @@ int main() {
     int valElementiC;
     int valElementiS;
     int scelta;
+    int errori;
 
     do {
         printf("Case: ");
@@ -61,26 +63,26 @@ int main() {
                 printf(" 2 - Contatore\n");
                 printf(" 3 - Sentinella\n");
                 printf(" -1 - Torna al menu\n");
-                do{
+                do {
                     printf("Case: ");
                     scanf("%d", &scelta);
 
                     //FUNCTION
-                    switch(scelta){
+                    switch (scelta) {
                         case 1:
-                            valElementiB= numElementiXB(datiB);
+                            valElementiB = numElementiXB(datiB);
                             printf("%d elementi.\n", valElementiB);
                             break;
                         case 2:
-                            valElementiC= numElementiXC(datiC);
+                            valElementiC = numElementiXC(datiC);
                             printf("%d elementi.\n", valElementiC);
                             break;
                         case 3:
-                            valElementiS= numElementiXS(datiS);
+                            valElementiS = numElementiXS(datiS);
                             printf("%d elementi.\n", valElementiS);
                             break;
                     }
-                } while (scelta!=-1);
+                } while (scelta != -1);
                 break;
             case 3:
                 //MENU
@@ -106,8 +108,51 @@ int main() {
                     }
                 } while (scelta != -1);
                 break;
-        }
-    } while (scelta != 0);
+            case 4: //add a value
+                //MENU
+                printf("Seleziona l'array:\n");
+                printf(" 1 - Buchi\n");
+                printf(" 2 - Contatore\n");
+                printf(" 3 - Sentinella\n");
+                printf(" -1 - Menu\n");
 
-    return 0;
-}
+                do {
+                    printf("Case: ");
+                    scanf("%d", &scelta);
+                    switch (scelta) {
+                        //FUNCTION
+                        case 1:
+                            errori = aggiungiXB(datiB);
+                            if (errori == -1) {
+                                printf("Impossibile inserire l'elemento nell'array\n");
+                                printf("Controlla stampando gli elementi con il caso 2\n ");
+                            } else {
+                                printf("Il valore è stato inserito correttamente\n");
+
+                                break;
+                                case 2:
+                                    errori = aggiungiXC(datiC);
+                                if (errori == -1) {
+                                    printf("Impossibile inserire l'elemento nell'array\n");
+                                    printf("Controlla stampando gli elementi con il caso 2\n ");
+                                } else {
+                                    printf("Il valore è stato inserito correttamente\n");
+                                }
+                                break;
+                                case 3:
+                                    errori = aggiungiXS(datiS);
+                                if (errori == -1) {
+                                    printf("Impossibile inserire l'elemento nell'array\n");
+                                    printf("Controlla stampando gli elementi con il caso 2\n ");
+                                } else {
+                                    printf("Il valore è stato inserito correttamente\n");
+                                    break;
+                                }
+                            }
+                            while (scelta != -1);
+                            break;
+                    }
+                } while (scelta != 0);
+                return 0;
+        }
+    }

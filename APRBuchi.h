@@ -15,5 +15,6 @@
 void inizializzaXB(float v[]);
 int numElementiXB(float v[]);
 void stampaXB(float v[]);
+int aggiungiXB(float v[]);
 
 #endif //BRUGNATTIAPR_APRBUCHI_H

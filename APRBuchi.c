@@ -31,11 +31,31 @@ int numElementiXB(float v[]){
 
 void stampaXB(float v[]) {
     int i;
+    int k=0;
     int cont;
     for (cont = 0; cont < 3; cont++) {
-        for (i = 0; i < DIM - 20; i++) {
-            printf("%10f ", v[i]);
+        for (i = 0; i < 10; i++) {
+            printf("%10.2f ", v[k]);
+            k++;
         }
-        printf("\n");
+        printf("\n\v");
     }
+}
+
+int aggiungiXB(float v[]){
+    float val;
+    int position;
+
+    printf("In che posizione vuoi inserire il valore?");
+    scanf("%d", &position);
+
+    printf("Quale valore vuoi assegnare?");
+    scanf("%f", &val);
+
+    if(v[position]==-1){
+        v[position]=val;
+        return 1; //errore
+    }
+    v[position]=val;
+    return 0;
 }

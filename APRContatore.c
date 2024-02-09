@@ -31,9 +31,9 @@ void stampaXC(float v[]) {
     int i;
     int cont;
     for (cont = 0; cont < 3; cont++) {
-        for (i = 0; i < DIM - 20; i++) {
-            printf("%f ", v[i]);
+        for (i = 0; i < 10; i++) {
+            printf("%10.2f ", v[i]);
         }
-        printf("\n");
+        printf("\n\v");
     }
 }
