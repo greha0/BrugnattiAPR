@@ -78,7 +78,7 @@ int main() {
                             printf("%d elementi.\n", valElementiC);
                             break;
                         case 3:
-                            valElementiS = numElementiXS(datiS);
+                            valElementiS = numElementiXS(datiS)-1;
                             printf("%d elementi.\n", valElementiS);
                             break;
                     }
@@ -128,31 +128,30 @@ int main() {
                                 printf("Controlla stampando gli elementi con il caso 2\n ");
                             } else {
                                 printf("Il valore è stato inserito correttamente\n");
-
-                                break;
-                                case 2:
-                                    errori = aggiungiXC(datiC);
-                                if (errori == -1) {
-                                    printf("Impossibile inserire l'elemento nell'array\n");
-                                    printf("Controlla stampando gli elementi con il caso 2\n ");
-                                } else {
-                                    printf("Il valore è stato inserito correttamente\n");
-                                }
-                                break;
-                                case 3:
-                                    errori = aggiungiXS(datiS);
-                                if (errori == -1) {
-                                    printf("Impossibile inserire l'elemento nell'array\n");
-                                    printf("Controlla stampando gli elementi con il caso 2\n ");
-                                } else {
-                                    printf("Il valore è stato inserito correttamente\n");
-                                    break;
-                                }
                             }
-                            while (scelta != -1);
                             break;
+                        case 2:
+                            errori = aggiungiXC(datiC);
+                            if (errori == -1) {
+                                printf("Impossibile inserire l'elemento nell'array\n");
+                                printf("Controlla stampando gli elementi con il caso 2\n ");
+                            } else {
+                                printf("Il valore è stato inserito correttamente\n");
+                            }
+                            break;
+                        case 3:
+                            errori = aggiungiXS(datiS);
+                            if (errori == -1) {
+                                printf("Impossibile inserire l'elemento nell'array\n");
+                                printf("Controlla stampando gli elementi con il caso 2\n ");
+                            } else {
+                                printf("Il valore è stato inserito correttamente\n");
+                                break;
+                            }
                     }
-                } while (scelta != 0);
-                return 0;
+                } while (scelta != -1);
+                break;
         }
-    }
+    } while (scelta != 0);
+    return 0;
+}

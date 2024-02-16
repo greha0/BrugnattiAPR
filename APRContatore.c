@@ -29,11 +29,29 @@ int numElementiXC(float v[]){
 
 void stampaXC(float v[]) {
     int i;
+    int k=0;
     int cont;
     for (cont = 0; cont < 3; cont++) {
         for (i = 0; i < 10; i++) {
-            printf("%10.2f ", v[i]);
+            printf("%10.2f ", v[k]);
+            k++;
         }
         printf("\n\v");
     }
+}
+
+int aggiungiXC(float v[]){
+    int cont=0;
+    float value;
+
+    if(numElementiXC(v)==30){
+        return -1;
+    }
+
+    do{
+        printf("Valore da aggiungere, -1=Cella vuota : ");
+        scanf("%f", &v[cont]);
+        cont++;
+    } while (cont<DIM);
+    return 0;
 }

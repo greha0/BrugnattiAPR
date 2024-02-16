@@ -15,4 +15,5 @@
 void inizializzaXS(float v[]);
 int numElementiXS(float v[]);
 void stampaXS(float v[]);
+int aggiungiXS(float v[]);
 #endif //BRUGNATTIAPR_APRSENTINELLA_H
