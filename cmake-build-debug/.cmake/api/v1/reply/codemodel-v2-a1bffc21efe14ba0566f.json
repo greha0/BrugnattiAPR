@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "K:/Informatica/BrugnattiAPR/cmake-build-debug",
-		"source" : "K:/Informatica/BrugnattiAPR"
+		"build" : "C:/Users/Greta/CLionProjects/BrugnattiAPR/cmake-build-debug",
+		"source" : "C:/Users/Greta/CLionProjects/BrugnattiAPR"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 5
+		"minor" : 6
 	}
 }

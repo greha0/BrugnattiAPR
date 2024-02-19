@@ -16,4 +16,5 @@ void inizializzaXC(float v[]);
 int numElementiXC(float v[]);
 void stampaXC(float v[]);
 int aggiungiXC(float v[]);
+int cercaXC(float v[]);
 #endif //BRUGNATTIAPR_APRCONTATORE_H

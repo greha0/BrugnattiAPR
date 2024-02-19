@@ -45,13 +45,22 @@ int aggiungiXC(float v[]){
     float value;
 
     if(numElementiXC(v)==30){
-        return -1;
+        return -1; //array pieno
     }
 
-    do{
-        printf("Valore da aggiungere, -1=Cella vuota : ");
-        scanf("%f", &v[cont]);
-        cont++;
-    } while (cont<DIM);
+    printf("Quale valore vuoi aggiungere? :  ");
+    scanf("%f", &value);
+
+    for(cont=0; cont<DIM; cont++){
+        if(v[cont]==-1){
+            v[cont]=value;
+            return 0;
+        }
+    }
+
     return 0;
+}
+
+int cercaXC(float v[]){
+    ;
 }

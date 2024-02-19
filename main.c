@@ -124,8 +124,7 @@ int main() {
                         case 1:
                             errori = aggiungiXB(datiB);
                             if (errori == -1) {
-                                printf("Impossibile inserire l'elemento nell'array\n");
-                                printf("Controlla stampando gli elementi con il caso 2\n ");
+                                printf("Impossibile inserire l'elemento nell'array, l'array è pieno\n");
                             } else {
                                 printf("Il valore è stato inserito correttamente\n");
                             }
@@ -133,8 +132,7 @@ int main() {
                         case 2:
                             errori = aggiungiXC(datiC);
                             if (errori == -1) {
-                                printf("Impossibile inserire l'elemento nell'array\n");
-                                printf("Controlla stampando gli elementi con il caso 2\n ");
+                                printf("Impossibile inserire l'elemento nell'array, l'array è pieno\n");
                             } else {
                                 printf("Il valore è stato inserito correttamente\n");
                             }
@@ -142,8 +140,7 @@ int main() {
                         case 3:
                             errori = aggiungiXS(datiS);
                             if (errori == -1) {
-                                printf("Impossibile inserire l'elemento nell'array\n");
-                                printf("Controlla stampando gli elementi con il caso 2\n ");
+                                printf("Impossibile inserire l'elemento nell'array, l'array è pieno\n");
                             } else {
                                 printf("Il valore è stato inserito correttamente\n");
                                 break;

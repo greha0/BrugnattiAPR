@@ -54,8 +54,24 @@ int aggiungiXB(float v[]){
 
     if(v[position]==-1){
         v[position]=val;
-        return 1; //errore
+        return 0;
+    } else {
+        return -1; //posizione non valida
     }
-    v[position]=val;
-    return 0;
+}
+
+int cercaXB(float v[]){
+    int i;
+    float value;
+
+    printf("Quale valore devo cercare? : ");
+    scanf("%f", &value);
+
+    for(i=0; i<DIM; i++){
+        if(v[i]==value){
+            printf("Il valore si trova alla posizione %d", i);
+            return 0;
+        }
+    }
+    return -1;
 }

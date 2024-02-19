@@ -43,21 +43,27 @@ void stampaXS(float v[]) {
 
 int aggiungiXS(float v[]){
     float value;
+    int posFLAG=0;
     int i;
 
     printf("Valore da aggiungere: ");
     scanf("%f", &value);
 
     for(i=0; i<DIM; i++){
-        if(v[i]==FLAG){
-            if(v[i]==FLAG && v[i]==DIM){
-                return -1;
-            } else {
-                v[i] = value;
-                v[i + 1] = FLAG;
-            }
+        if(v[i]==FLAG) {
+            posFLAG=i;
+        }
+        if(posFLAG==DIM-1){
+            return 1; //errore
         }
     }
+    v[posFLAG] = value;
+    v[posFLAG+1] = FLAG;
+
     return 0;
+}
+
+int cercaXS(float v[]){
+    ;
 }
 
